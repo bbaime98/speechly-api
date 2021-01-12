@@ -6,13 +6,8 @@ import useStyles from './styles';
 
 const List = () => {
   const classes = useStyles();
-  const globalState = useContext(ExpenseTrackerContext)
-  console.log("___GLOBAL STATE", globalState)
-  const transactions = [
-    {id: 1, type: "Expense", category: "Salary", amount: 50, date: new Date()},
-    {id: 2, type: "Expense", category: "Salary", amount: 50, date: new Date()},
-    {id: 3, type: "Income", category: "Salary", amount: 50, date: new Date()}
-  ]
+  const {transactions, deleteTransaction} = useContext(ExpenseTrackerContext)
+
   return (
     <MUIList dense={false} className={classes.list}>
       {transactions.map((transaction) => (
@@ -25,7 +20,7 @@ const List = () => {
             </ListItemAvatar>
             <ListItemText primary={transaction.category} secondary={`$${transaction.amount} - ${transaction.date}`} />
             <ListItemSecondaryAction>
-              <IconButton edge="end" aria-label="delete">
+              <IconButton edge="end" aria-label="delete" onClick={()=>deleteTransaction(transaction.id)}>
                 <Delete />
               </IconButton>
             </ListItemSecondaryAction>
