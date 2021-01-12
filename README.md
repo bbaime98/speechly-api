@@ -1,1 +1,1 @@
-# React sound recognition using speechly-api
+# React sound recognition app using speechly-api
