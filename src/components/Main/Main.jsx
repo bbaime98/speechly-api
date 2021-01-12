@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, CardHeader, CardContent, Typography, Grid, Divider } from '@material-ui/core';
 import { useSpeechContext } from '@speechly/react-client';
-import useStyles from './styles';
+import Form from './Form/Form';
 
+import useStyles from './styles';
 const ExpenseTracker = () => {
   const classes = useStyles();
 
@@ -15,7 +16,7 @@ const ExpenseTracker = () => {
           {/* <InfoCard /> */}
         </Typography>
         <Divider className={classes.divider} />
-        {/* <Form /> */}
+        <Form />
       </CardContent>
       <CardContent className={classes.cartContent}>
         <Grid container spacing={2}>
