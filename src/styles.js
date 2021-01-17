@@ -26,5 +26,11 @@ export default makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(2),
     },
+    backgroundColor: 'rgba(5,100, 100, .9)',
+    height: "100vh"
   },
+  hero: {
+    backgroundColor: 'rgba(255,255, 255, .9)',
+    borderRadius: 8,
+  }
 }));
