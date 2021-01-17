@@ -4,3 +4,4 @@
  - React
  - Speechly API
  - React-chartjs
+ - Material UI
