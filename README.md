@@ -5,3 +5,6 @@
  - Speechly API
  - React-chartjs
  - Material UI
+
+
+- Live version : https://speech-recognition-ui.netlify.app/
